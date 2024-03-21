@@ -1,0 +1,30 @@
+<div>
+  <div>
+    <picture>
+      <img
+        [ngSrc]="book?.img || 'https://via.placeholder.com/640x360'"
+        width="389"
+        height="500"
+        [style]="book?.viewTransitionName"
+      />
+    </picture>
+  </div>
+
+  <aside>
+    <h1>
+      {{ book?.title }}
+    </h1>
+    <p>
+      <strong>Autor:</strong>
+      <span>
+        {{ book?.author }}
+      </span>
+    </p>
+    <p>
+      <strong>Opinion:</strong>
+      <span>
+        {{ book?.opinion }}
+      </span>
+    </p>
+  </aside>
+</div>

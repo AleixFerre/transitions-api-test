@@ -1,0 +1,10 @@
+<h1>Libros de programación</h1>
+<a *ngFor="let book of books" [routerLink]="['/books', book.id]">
+  <img
+    alt="La portada del libro"
+    [ngSrc]="book.img"
+    height="500"
+    width="389"
+    [style]="book.viewTransitionName"
+  />
+</a>
